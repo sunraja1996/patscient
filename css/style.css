@@ -688,7 +688,7 @@ img{
 
 .main-header .header-upper .logo-box .logo{
 	position:relative;
-	width: 150px;
+	width: 120px;
     height: auto;
 }
 
@@ -812,7 +812,7 @@ img{
 
 .sticky-header .logo{
 	padding:11px 0px 9px;
-	width: 150px;
+	width: 120px;
     height: auto;
 }
 
@@ -1349,6 +1349,10 @@ img{
 
 ***/
 
+/* disclaimer*/
+
+  
+
 .scroll-to-toped{
 	position:fixed;
 	bottom:15px;
@@ -1433,7 +1437,7 @@ img{
 	right:0px;
 	bottom:0px;
 	z-index:2;
-	background-color:rgba(0,32,76,0.80);
+	background-color:rgba(0, 74, 177, 0.479);
 }
 
 .banner-section .slide{
@@ -1455,8 +1459,8 @@ img{
 .banner-section .content-column .title{
 	position:relative;
 	color:#ff7f3e;
-	font-size:25px;
-	line-height:1.8em;
+	font-size:75px;
+	line-height:1.2em;
 	margin-bottom:22px;
 	font-weight:400;
 	opacity: 0;
@@ -1481,7 +1485,12 @@ img{
 	top:20px;
 	height:2px;
 	width:60px;
-	background-color:#ff7f3e;
+}
+.banner-section .content-column h3{
+	color:#ffffff;
+	font-size:35px;
+	margin-bottom:22px;
+	font-weight:400;
 }
 
 .banner-section .active .content-column .title{
@@ -3323,7 +3332,7 @@ img{
 
 .main-footer{
 	position:relative;
-	background-color: #00008b;
+	background-color: hsla(0, 0%, 19%, 0.801);
 }
 
 .main-footer .widgets-section{
@@ -3342,7 +3351,7 @@ img{
 }
 
 .main-footer .footer-widget h5{
-	color:#ffffff;
+	color:#ff7f3e;
 	margin-bottom:20px;
 	letter-spacing:1px;
 	text-transform:uppercase;
@@ -3360,7 +3369,7 @@ img{
 
 .main-footer .logo-widget .text{
 	position:relative;
-	color:#8fa4c2;
+	color:#ffffff;
 	font-weight:400;
 	margin-bottom:20px;
 }
@@ -3416,7 +3425,7 @@ img{
 
 .main-footer .footer-list li a{
 	position:relative;
-	color:#8fa4c2;
+	color:#ffffff;
 	font-size:16px;
 	font-weight:400;
 	padding-left:22px;
@@ -3451,7 +3460,7 @@ img{
 
 .main-footer .contact-widget ul li{
 	position:relative;
-	color:#8fa4c2;
+	color:#ffffff;
 	font-size:16px;
 	padding-left:35px;
 	margin-bottom:20px;
@@ -3464,12 +3473,12 @@ img{
 	top:5px;
 	font-size:18px;
 	line-height:1em;
-	color:#8fa4c2;
+	color:#ffffff;
 }
 
 .main-footer .contact-widget ul li a{
 	position:relative;
-	color:#8fa4c2;
+	color:#ffffff;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -3485,7 +3494,7 @@ img{
 
 .main-footer .newsletter-widget .text{
 	position: relative;
-    color: #8fa4c2;
+    color: #ffffff;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -3522,7 +3531,7 @@ img{
 
 .main-footer .newsletter-form .form-group input::-webkit-input-placeholder,
 .main-footer .newsletter-form .form-group textarea::-webkit-input-placeholder{
-	color:#899ebc;
+	color:#ffffff;
 }
 
 .main-footer .newsletter-form .form-group button{
@@ -3540,7 +3549,7 @@ img{
 .main-footer .footer-bottom .copyright{
 	position:relative;
 	font-size:14px;
-	color:#8fa4c2;
+	color:#ffffff;
 	text-align:center;
 }
 
@@ -3573,7 +3582,7 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:rgba(0,32,76,0.80);
+	background-color:rgba(0, 74, 177, 0.479);
 }
 
 .page-title h1{

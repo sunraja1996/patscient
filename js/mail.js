@@ -11,7 +11,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     let message = document.getElementById("message").value;
 
     // Construct the Gmail URL
-    let gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=padma@patscient.com&su=${encodeURIComponent(subject)}&body=Full Name: ${encodeURIComponent(fullname)}%0D%0AEmail: ${encodeURIComponent(email)}%0D%0APhone: ${encodeURIComponent(phone)}%0D%0ACompany/Organization: ${encodeURIComponent(organization)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+    let gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=patscient@gmail.com&su=${encodeURIComponent(subject)}&body=Full Name: ${encodeURIComponent(fullname)}%0D%0AEmail: ${encodeURIComponent(email)}%0D%0APhone: ${encodeURIComponent(phone)}%0D%0ACompany/Organization: ${encodeURIComponent(organization)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
 
     // Open Gmail in a new tab
     window.open(gmailLink, '_blank');

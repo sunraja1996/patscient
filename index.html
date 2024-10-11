@@ -135,8 +135,8 @@
     <!-- End Main Header -->
 
 
-  <!-- Disclaimer Section -->
-  <div id="disclaimer-section" class="disclaimer-active">
+ <!-- Disclaimer Section -->
+<div id="disclaimer-section" class="disclaimer-active">
     <div class="disclaimer-box">
       <h2>DISCLAIMER</h2>
       <p>As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise. By clicking on the “I AGREE” button below, you acknowledge the following:</p>
@@ -154,6 +154,7 @@
       </div>
     </div>
   </div>
+  
 	
 	<!-- Banner Section -->
     <section class="banner-section">
@@ -173,8 +174,8 @@
 					<!-- Content Column -->
 					<div class="content-column">
 						<div class="inner-column">
-							<div class="title">PATsciENT</div>
-							<h1>your <br> techno-legal aiders</h1>
+							<div class="title" style="color: #00008d;">PAT<span style="color: #ff7f3e;">sci</span>ENT</div>
+							<h3>Your techno-legal aiders</h3>
 							<div class="btns-box">
 								<a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Free Consultation <i class="arrow flaticon-right"></i></span></a>
 							</div>
@@ -536,7 +537,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<h2>Our Professional Team</h2>
+				<h2>Our Team</h2>
 			</div>
 			<div class="row clearfix">
 				
@@ -548,6 +549,7 @@
 						</div>
 						<div class="lower-box">
 							<h5><a href="our_team.html">Ms.Padma Sree</a></h5>
+							<div class="designation">Founder</div>
 							<div class="designation">Patent Agent</div>
 						</div>
 					</div>
@@ -561,7 +563,7 @@
 						</div>
 						<div class="lower-box">
 							<h5><a href="our_team.html">Ms Divya Sridharan</a></h5>
-							<div class="designation">Senior Research Analyst</div>
+							<div class="designation">Patent Agent</div>
 						</div>
 					</div>
 				</div>
@@ -574,7 +576,7 @@
 						</div>
 						<div class="lower-box">
 							<h5><a href="our_team.html">Mr G.Saravanan</a></h5>
-							<div class="designation">Attorney</div>
+							<div class="designation">Patent Attorney</div>
 						</div>
 					</div>
 				</div>
@@ -675,7 +677,7 @@
 										</li>
 										<li>
 											<span class="icon flaticon-email-2"></span>
-											<a href="mailto:Info@counsellawfirm.com">padma@patscient.com</a>
+											<a href="mailto:Info@counsellawfirm.com">patscient@gmail.com</a>
 										</li>
 										<li>
 											<span class="icon flaticon-maps-and-flags"></span>
@@ -730,21 +732,35 @@
 
 
 <script>
-    const agreeCheckbox = document.getElementById('agree-checkbox');
-    const continueButton = document.getElementById('continue-button');
-    const disclaimerSection = document.getElementById('disclaimer-section');
-    const mainContent = document.getElementById('main-content');
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the user has already agreed to the disclaimer
+    if (localStorage.getItem("disclaimerAgreed") === "true") {
+        document.getElementById("disclaimer-section").style.display = "none";
+    } else {
+        document.getElementById("disclaimer-section").style.display = "block";
+    }
 
-    // Enable the button if checkbox is checked
-    agreeCheckbox.addEventListener('change', () => {
-      continueButton.disabled = !agreeCheckbox.checked;
+    const agreeCheckbox = document.getElementById("agree-checkbox");
+    const continueButton = document.getElementById("continue-button");
+
+    // Enable button when checkbox is clicked
+    agreeCheckbox.addEventListener("change", function() {
+        continueButton.disabled = !agreeCheckbox.checked;
     });
 
-    // Show the main content when button is clicked
-    continueButton.addEventListener('click', () => {
-      disclaimerSection.style.display = 'none';
-      mainContent.style.display = 'block';
+    // When the "I AGREE" button is clicked
+    continueButton.addEventListener("click", function() {
+        if (agreeCheckbox.checked) {
+            // Store user's agreement in localStorage
+            localStorage.setItem("disclaimerAgreed", "true");
+            // Hide the disclaimer section
+            document.getElementById("disclaimer-section").style.display = "none";
+        }
     });
+});
+
+
+
   </script>
   
 <script src="js/jquery.js"></script>
