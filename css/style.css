@@ -74,83 +74,115 @@ body {
 	-moz-font-smoothing: antialiased;
 }
 
-
+/* Center the disclaimer section */
 #disclaimer-section {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.8);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-  }
-  
-  .disclaimer-box {
-	background-color: #fff;
-	padding: 30px;
-	max-width: 600px;
-	width: 100%;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	text-align: center;
-  }
-  
-  .disclaimer-box h2 {
-	font-size: 24px;
-	color: #333;
-	margin-bottom: 20px;
-  }
-  
-  .disclaimer-box p {
-	font-size: 14px;
-	color: #666;
-  }
-  
-  .disclaimer-box ul {
-	text-align: left;
-	list-style: none;
-	padding-left: 0;
-  }
-  
-  .disclaimer-box ul li {
-	font-size: 14px;
-	color: #666;
-	margin-bottom: 10px;
-  }
-  
-  .disclaimer-actions {
-	margin-top: 20px;
-  }
-  
-  #agree-checkbox {
-	margin-right: 10px;
-  }
-  
-  #continue-button {
-	padding: 10px 20px;
-	background-color: #ff7f3e;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-  }
-  
-  #continue-button:disabled {
-	background-color: #ccc;
-	cursor: not-allowed;
-  }
-  
-  #continue-button:hover:enabled {
-	background-color: #ff7f3e;
-  }
-  
-  #main-content {
-	padding: 20px;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px; /* Ensures spacing on smaller screens */
+    flex-wrap: wrap;
+}
+
+/* Style for the disclaimer box */
+.disclaimer-box {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    max-height: 90vh; /* Ensure it doesn't exceed 90% of the viewport height */
+    overflow-y: auto; /* Allows scrolling if content exceeds available height */
+}
+
+/* Heading styling */
+.disclaimer-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.disclaimer-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Unordered list styling */
+.disclaimer-box ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 15px 0;
+}
+
+/* List item styling */
+.disclaimer-box ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Disclaimer actions section (checkbox and button) */
+.disclaimer-actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Checkbox styling */
+#agree-checkbox {
+    margin-right: 10px;
+}
+
+/* Button styling */
+#continue-button {
+    padding: 10px 20px;
+    background-color: #ff7f3e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#continue-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#continue-button:hover:enabled {
+    background-color: #ff7f3e;
+}
+
+/* Optional: Add styles to ensure better readability on smaller screens */
+@media (max-width: 600px) {
+    .disclaimer-box {
+        padding: 20px;
+    }
+
+    .disclaimer-box h2 {
+        font-size: 20px;
+    }
+
+    .disclaimer-box p, .disclaimer-box ul li {
+        font-size: 13px;
+    }
+}
+
+
+
     
   .intro-section {
 	margin-top: 20px;

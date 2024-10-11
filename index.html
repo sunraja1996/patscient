@@ -737,7 +737,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (localStorage.getItem("disclaimerAgreed") === "true") {
         document.getElementById("disclaimer-section").style.display = "none";
     } else {
-        document.getElementById("disclaimer-section").style.display = "block";
+        document.getElementById("disclaimer-section").style.display = "flex"; // Ensure display is set to flex for centering
     }
 
     const agreeCheckbox = document.getElementById("agree-checkbox");
