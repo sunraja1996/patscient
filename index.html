@@ -757,8 +757,12 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("disclaimer-section").style.display = "none";
         }
     });
-});
 
+    // Clear localStorage when the page is closed or the user navigates away
+    window.addEventListener("beforeunload", function() {
+        localStorage.removeItem("disclaimerAgreed");
+    });
+});
 
 
   </script>
