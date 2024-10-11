@@ -734,7 +734,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Check if the user has already agreed to the disclaimer
-    if (localStorage.getItem("disclaimerAgreed") === "true") {
+    if (sessionStorage.getItem("disclaimerAgreed") === "true") {
         document.getElementById("disclaimer-section").style.display = "none";
     } else {
         document.getElementById("disclaimer-section").style.display = "flex"; // Ensure display is set to flex for centering
@@ -751,18 +751,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // When the "I AGREE" button is clicked
     continueButton.addEventListener("click", function() {
         if (agreeCheckbox.checked) {
-            // Store user's agreement in localStorage
-            localStorage.setItem("disclaimerAgreed", "true");
+            // Store user's agreement in sessionStorage
+            sessionStorage.setItem("disclaimerAgreed", "true");
             // Hide the disclaimer section
             document.getElementById("disclaimer-section").style.display = "none";
         }
     });
-
-    // Clear localStorage when the page is closed or the user navigates away
-    window.addEventListener("beforeunload", function() {
-        localStorage.removeItem("disclaimerAgreed");
-    });
 });
+
 
 
   </script>
