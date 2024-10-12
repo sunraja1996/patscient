@@ -197,7 +197,7 @@
 	
 	.main-header{
 		position:relative;
-		background-color:#222222;
+		background-color:#ffffff;
 	}
 	
 	.main-header .nav-outer{
@@ -701,7 +701,7 @@
 	
 	.sticky-header .logo{
 		text-align:left;
-		width:150px;
+		width:90px;
 		padding:10px 0px 10px;
 	}
 	
@@ -864,6 +864,15 @@
 	
 	.banner-section .content-column .title{
 		letter-spacing:1px;
+		color:#ff7f3e;
+	font-size:50px;
+	line-height:0.7em;
+	}
+
+	.banner-section .content-column h3{
+		letter-spacing:1px;
+		letter-spacing:1px;
+	font-size:25px;
 	}
 	
 	.page-title h1{
@@ -1053,6 +1062,12 @@
 	.main-header .header-upper .logo-box .logo{
 		transform:scale(0.8,0.8);
 		margin-left:-20px;
+	}
+
+	.main-header .header-upper .logo-box .logo img{
+		max-width:100%;
+	width: 100px;
+    height: auto;
 	}
 	
 	.blog-detail .inner-box .lower-content blockquote .quote-text{
