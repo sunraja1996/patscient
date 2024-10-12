@@ -20,6 +20,18 @@
 	
 }
 
+@media screen and (max-width: 1480px){
+	.banner-section .social-nav{
+		right:50px;
+		left:auto;
+		visibility: hidden;
+	}
+	.banner-section .content-column h3{
+		letter-spacing:1px;
+	font-size:55px;
+	}
+}
+
 @media only screen and (max-width: 1140px){
 	
 	.main-header{
@@ -52,6 +64,7 @@
 	.banner-section .social-nav{
 		right:50px;
 		left:auto;
+		visibility: hidden;
 	}
 	
 	h2{
@@ -305,7 +318,7 @@
 	
 	.banner-section .social-nav{
 		top:22%;
-		right:20px;
+		right: 10px;
 	}
 	
 	.case-section .content-column .inner-column{
@@ -728,6 +741,9 @@
 	.banner-section .content-column .text{
 		font-size:18px;
 	}
+	.banner-section .content-column h3{
+		font-size: 45px;
+	}
 	
 	.fact-counter .counter-column .inner .content{
 		padding-left:0px;
@@ -870,7 +886,6 @@
 	}
 
 	.banner-section .content-column h3{
-		letter-spacing:1px;
 		letter-spacing:1px;
 	font-size:25px;
 	}
