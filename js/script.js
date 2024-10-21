@@ -790,30 +790,30 @@ function closePopup() {
 
 
 // Function to replace HTML extensions in the URL
-function cleanURL() {
-    const currentURL = window.location.href;
+// function cleanURL() {
+//     const currentURL = window.location.href;
 
-    const replacements = {
-        '/about.html': '/aboutus',
-        '/index.html': '/',
-        '/services_style_02.html': '/services',
-        '/careers.html': '/careers',
-        '/our_team.html': '/ourteam',
-        '/contact.html': '/contactus',
-        '/prefile.html': '/patentservices',
-        '/designreg.html': '/designservices',
-    };
+//     const replacements = {
+//         '/about.html': '/aboutus',
+//         '/index.html': '/',
+//         '/services_style_02.html': '/services',
+//         '/careers.html': '/careers',
+//         '/our_team.html': '/ourteam',
+//         '/contact.html': '/contactus',
+//         '/prefile.html': '/patentservices',
+//         '/designreg.html': '/designservices',
+//     };
 
-    for (const [oldPath, newPath] of Object.entries(replacements)) {
-        if (currentURL.includes(oldPath)) {
-            const newURL = currentURL.replace(oldPath, newPath);
-            window.history.pushState({}, '', newURL);
-            break;
-        }
-    }
-}
+//     for (const [oldPath, newPath] of Object.entries(replacements)) {
+//         if (currentURL.includes(oldPath)) {
+//             const newURL = currentURL.replace(oldPath, newPath);
+//             window.history.pushState({}, '', newURL);
+//             break;
+//         }
+//     }
+// }
 
-window.onload = cleanURL;
+// window.onload = cleanURL;
 
 
 

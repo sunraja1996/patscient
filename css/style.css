@@ -2011,7 +2011,7 @@ img{
 	position:relative;
 	text-align:left;
 	padding:40px 20px;
-	background-color:rgba(0,30,73,0.80);
+	background-color:rgba(165, 203, 255, 0.8);
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -2030,7 +2030,7 @@ img{
 
 .fact-counter .counter-column .count-box{
 	position:relative;
-	color:#ffffff;
+	color:#00008b;
 	font-size:45px;
 	line-height:1em;
 	font-family: 'Bellefair', serif;
@@ -2064,7 +2064,7 @@ img{
 
 .fact-counter .counter-column .count-text{
 	display:inline-block;
-	color:#ffffff;
+	color:#00008b;
 	line-height:1em;
 }
 
@@ -2076,7 +2076,7 @@ img{
 
 .fact-counter .counter-column .counter-title{
 	margin-top:10px;
-	color:#ffffff;
+	color:#00008b;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -2085,6 +2085,19 @@ img{
 	border:0px;
 	padding:40px 0px;
 }
+
+/* General fact-counter settings remain unchanged */
+.fact-counter {
+    position: relative;
+}
+
+.fact-counter .counter-column {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+
 
 .video-boxed{
 	position:relative;

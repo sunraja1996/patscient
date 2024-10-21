@@ -1,0 +1,53 @@
+<!-- Team Section -->
+	<section class="team-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<h2>Our Team</h2>
+			</div>
+			<div class="row clearfix">
+				
+				<!-- Team Block -->
+				<div class="team-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="images/gallery/padma.jpg" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Ms.Padma Sree</a></h5>
+							<div class="designation">Founder</div>
+							<div class="designation">Patent Agent</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Team Block -->
+				<div class="team-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="images/gallery/Divya.jpg" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Ms Divya Sridharan</a></h5>
+							<div class="designation">Patent Agent</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Team Block -->
+				<div class="team-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="images/gallery/Saravanan.jpg" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Mr G.Saravanan</a></h5>
+							<div class="designation">Patent Attorney</div>
+						</div>
+					</div>
+				</div>
+								
+			</div>
+		</div>
+	</section>
+	<!-- End Team Section -->
